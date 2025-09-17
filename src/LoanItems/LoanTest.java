@@ -51,10 +51,10 @@ public class LoanTest {
     }
 
     public static void printOut(Media[] media) {
-
-        System.out.print("LIST OF LOAN ITEMS:\n------------------\nID\tTYPE\tTITLE\n");
+        System.out.print("LIST OF LOAN ITEMS:\n------------------------------------\n");
+        System.out.printf("\n%-10s %-20s %-30s%n", "ID", "TITLE", "TYPE");
         for (int i = 0; i < media.length; i++) {
-            System.out.println((i + 1) + "\t" + media[i]);
+            System.out.printf("%-10d %-20s %-30s%n", i + 1, media[i].getType(), media[i].getTitle());
         }
     }
 }

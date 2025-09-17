@@ -9,12 +9,14 @@ public class Media {
         this.title = title;
         this.type = type;
     }
+    public void printInfo() {
+        System.out.println("Title: " + title);
+}
 
-    @Override
+        @Override
     public String toString() {
-        return type + " " + title;
-    }
-
+            return type + ": " + title;
+        }
     public String getTitle() {
         return title;
     }
