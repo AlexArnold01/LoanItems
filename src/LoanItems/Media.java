@@ -9,9 +9,6 @@ public class Media {
         this.title = title;
         this.type = type;
     }
-    public void printInfo() {
-        System.out.println("Title: " + title);
-}
 
         @Override
     public String toString() {
