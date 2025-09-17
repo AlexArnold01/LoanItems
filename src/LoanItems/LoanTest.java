@@ -26,7 +26,7 @@ public class LoanTest {
 
         for (int i = 0; i < media.length; i++) {
 
-            String itemNum = (i + 1));
+            String itemNum = ((i + 1));
 
             System.out.print("What type of item would you like to register. Type either B or V (Book or Video): ");
             String type = sc.nextLine();
