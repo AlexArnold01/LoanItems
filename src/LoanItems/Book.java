@@ -6,4 +6,9 @@ public class Book extends Media {
     public Book(String type, String title) {
         super(type, title);
     }
+
+    @Override
+    public String toString() {
+        return "Book" + title;
+    }
 }
