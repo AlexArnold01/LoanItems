@@ -7,8 +7,9 @@ public class Book extends Media {
         super(type, title);
     }
 
+    //toString metode
     @Override
     public String toString() {
-        return "Book" + title;
+        return type + title;
     }
 }

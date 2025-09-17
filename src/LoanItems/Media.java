@@ -16,10 +16,10 @@ public class Media {
     }
 
     public String getTitle() {
-        return getTitle();
+        return title;
     }
     public String getType() {
-        return getType();
+        return type;
     }
 
     public void setTitle(String title) {

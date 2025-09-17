@@ -6,8 +6,9 @@ public class Video extends Media {
         super(type, title);
     }
 
+    //toString metode
     @Override
     public String toString() {
-        return "Video" + title;
+        return type + title;
     }
 }
