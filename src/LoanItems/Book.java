@@ -1,5 +1,5 @@
 package LoanItems;
-
+//Subclass
 public class Book extends Media {
 
     //Fuld konstruktør
