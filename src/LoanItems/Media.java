@@ -12,7 +12,7 @@ public class Media {
 
     @Override
     public String toString() {
-        return title + type;
+        return type + " " + title;
     }
 
     public String getTitle() {

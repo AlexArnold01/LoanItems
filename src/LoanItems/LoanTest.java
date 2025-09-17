@@ -17,7 +17,7 @@ public class LoanTest {
     public static void registerMedia() {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("How many items would you like to register?");
+        System.out.print("How many items would you like to register? ");
         int numOfMedia = sc.nextInt();
         sc.nextLine();
 
@@ -26,17 +26,19 @@ public class LoanTest {
 
         for (int i = 0; i < media.length; i++) {
 
-            String itemNum = ((i + 1));
+            System.out.println("ITEM No. " + (i + 1));
 
-            System.out.print("What type of item would you like to register. Type either B or V (Book or Video): ");
+            System.out.print("\tWhat type of item would you like to register. Type either B or V (Book or Video): ");
             String type = sc.nextLine();
 
-            System.out.print("What is the title of your item? ");
+            System.out.print("\tWhat is the title of your item? ");
             String title = sc.nextLine();
 
             if (type.equalsIgnoreCase("B")) {
+                type = "Book";
                 media[i] = new Book(type, title);
             } else if (type.equalsIgnoreCase("V")) {
+                type = "Video";
                 media[i] = new Video(type, title);
             } else {
                 System.out.println("Invalid type! \nPlease retry and write either B or V as a type. \n  ");
@@ -49,8 +51,10 @@ public class LoanTest {
     }
 
     public static void printOut(Media[] media) {
+
+        System.out.print("LIST OF LOAN ITEMS:\n------------------\nID\tTYPE\tTITLE\n");
         for (int i = 0; i < media.length; i++) {
-            System.out.println((i + 1) + "# " + media[i]);
+            System.out.println((i + 1) + "\t" + media[i]);
         }
     }
 }
